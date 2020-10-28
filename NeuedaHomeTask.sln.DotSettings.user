@@ -1,7 +1,0 @@
-﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dfebdb50_002D97ad_002D4a17_002Dbe8d_002Db2eaa422e0f3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ConvertUrlTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;MSTest::FC7CA13D-DBF1-4B81-9223-3A4EC20A8899::.NETFramework,Version=v4.7.2::UnitTests.ConvertUrlTest&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;MSTest::FC7CA13D-DBF1-4B81-9223-3A4EC20A8899::.NETFramework,Version=v4.7.2::UnitTests.ValidateUrlTest&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
