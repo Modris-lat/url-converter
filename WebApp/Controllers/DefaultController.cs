@@ -38,10 +38,10 @@ namespace WebApp.Controllers
                     var shortUrlCode = _convertUrl.GetShorterUrl(url);
                     var container = new UrlContainer { LongUrl = url, ShortUrl = shortUrlCode };
                     await _urlStorage.AddItem(container);
-                    return Ok(container.ShortUrl);
+                    return Ok($"http://home/{container.ShortUrl}");
                 }
 
-                return Ok(urlSearch.ShortUrl);
+                return Ok($"http://home/{urlSearch.ShortUrl}");
             }
             return BadRequest();
         }
