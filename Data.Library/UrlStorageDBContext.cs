@@ -8,7 +8,6 @@ namespace Data.Library
     {
         public UrlStorageDBContext() : base("url-storage")
         {
-            Database.SetInitializer<UrlStorageDBContext>(null);
             Database.SetInitializer<UrlStorageDBContext>(
                 new MigrateDatabaseToLatestVersion<UrlStorageDBContext, Configuration
                 >());
