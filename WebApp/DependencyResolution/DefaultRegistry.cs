@@ -15,10 +15,13 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
+using System.Collections.Generic;
 using Data.Library;
 using Data.Library.Interfaces;
 using NeuedaHomeTask;
 using NeuedaHomeTask.Interfaces;
+using NeuedaHomeTask.Services;
+using NeuedaHomeTask.Services.GetCharactersForShortUrlCode;
 using StructureMap;
 
 namespace WebApp.DependencyResolution {
@@ -28,18 +31,28 @@ namespace WebApp.DependencyResolution {
     public class DefaultRegistry : Registry {
         #region Constructors and Destructors
 
-        public DefaultRegistry() {
+        public DefaultRegistry()
+        {
             Scan(
-                scan => {
+                scan =>
+                {
                     scan.TheCallingAssembly();
                     scan.WithDefaultConventions();
-					scan.With(new ControllerConvention());
+                    scan.With(new ControllerConvention());
                 });
             For<IDbService>().Use<DbService>();
             For<IUrlStorageDBContext>().Use<UrlStorageDBContext>().Transient();
             For<IConstructUserInput>().Use<ConstructUserUrlInput>();
             For<IConvertUrl>().Use<ConvertUrl>();
             For<IValidateUrl>().Use<ValidateUrl>();
+            For<IStrategyList>().Use<StrategyList>();
+            For<IGetChar>().Add<GetFirstCharacter>();
+            For<IGetChar>().Add<GetSecondCharacter>();
+            For<IGetChar>().Add<GetThirdCharacter>();
+            For<IGetChar>().Add<GetFourthCharacter>();
+            For<IGetChar>().Add<GetFifthCharacter>();
+            For<IGetChar>().Add<GetSixthCharacter>();
+            For<IContexts>().Use<Context>();
         }
 
         #endregion

@@ -69,19 +69,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IContexts.cs" />
+    <Compile Include="Interfaces\IGetChar.cs" />
     <Compile Include="Services\ConstructUserUrlInput.cs" />
+    <Compile Include="Services\Context.cs" />
     <Compile Include="Services\ConvertUrl.cs" />
-    <Compile Include="Services\GetCharactersForShortUrlCode\GetFifthChar.cs" />
-    <Compile Include="Services\GetCharactersForShortUrlCode\GetFirstChar.cs" />
-    <Compile Include="Services\GetCharactersForShortUrlCode\GetFourthChar.cs" />
-    <Compile Include="Services\GetCharactersForShortUrlCode\GetSecondChar.cs" />
-    <Compile Include="Services\GetCharactersForShortUrlCode\GetSixthChar.cs" />
-    <Compile Include="Services\GetCharactersForShortUrlCode\GetThirdChar.cs" />
+    <Compile Include="Services\GetCharactersForShortUrlCode\GetFifthCharacter.cs" />
+    <Compile Include="Services\GetCharactersForShortUrlCode\GetFirstCharacter.cs" />
+    <Compile Include="Services\GetCharactersForShortUrlCode\GetFourthCharacter.cs" />
+    <Compile Include="Services\GetCharactersForShortUrlCode\GetSecondCharacter.cs" />
+    <Compile Include="Services\GetCharactersForShortUrlCode\GetSixthCharacter.cs" />
     <Compile Include="Interfaces\IConstructUserInput.cs" />
     <Compile Include="Interfaces\IConvertUrl.cs" />
     <Compile Include="Interfaces\IValidateUrl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\UrlContainer.cs" />
+    <Compile Include="Services\GetCharactersForShortUrlCode\GetThirdCharacter.cs" />
+    <Compile Include="Services\IStrategyList.cs" />
+    <Compile Include="Services\StrategyList.cs" />
     <Compile Include="Services\ValidateUrl.cs" />
   </ItemGroup>
   <ItemGroup>

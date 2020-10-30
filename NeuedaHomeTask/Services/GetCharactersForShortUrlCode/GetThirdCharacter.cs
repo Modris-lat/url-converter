@@ -1,10 +1,15 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using NeuedaHomeTask.Interfaces;
 
-namespace NeuedaHomeTask.GetCharactersForShortUrlCode
+namespace NeuedaHomeTask.Services.GetCharactersForShortUrlCode
 {
-    public static class GetThirdChar
+    public class GetThirdCharacter: IGetChar
     {
-        public static string GetThirdCharacter(string url)
+        public string GetCharacter(string url)
         {
             string separatedLength = "";
             if (url.Contains('/'))
